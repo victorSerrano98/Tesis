@@ -1,7 +1,9 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 pandas
 streamlit
 spacy
-torch-1.3.1+cpu-cp37-cp37m-linux_x86_64.whl
+torch==1.8.1+cpu
+torchvision==0.9.1+cpu
 transformers
 sentencepiece
 googletrans==3.1.0a0
