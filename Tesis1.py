@@ -6,7 +6,6 @@ from vespa.query import Union, WeakAnd, ANN
 from random import random
 from vespa.query import QueryModel, RankProfile, QueryRankingFeature
 
-
 question_answerer = pipeline("question-answering")
 # questions = "¿Cuánto tiempo tardan en aparecer los síntomas del covid-19?"
 def traductor(questions):
