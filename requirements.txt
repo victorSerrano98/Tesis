@@ -1,5 +1,4 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-python -m spacy download en_core_web_sm
 pandas
 streamlit
 spacy
