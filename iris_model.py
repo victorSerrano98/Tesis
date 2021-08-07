@@ -10,7 +10,7 @@ def classify(num):
 
 
 def main():
-    st.title('Alexis puto')
+    st.title('Chatbot')
     st.sidebar.header('par')
 
     def parametros():
