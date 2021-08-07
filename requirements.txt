@@ -2,7 +2,6 @@
 pandas
 streamlit
 spacy
-en_core_web_sm
 torch==1.8.1+cpu
 torchvision==0.9.1+cpu
 transformers
