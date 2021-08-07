@@ -11,7 +11,7 @@ def classify(num):
 
 def main():
     st.title('Chatbot:')
-    st.sidebar.header('par')
+    st.sidebar.header('Universidad Nacional de Loja')
 
     def parametros():
         pregunta=st.text_input('ingrese pregunta')
