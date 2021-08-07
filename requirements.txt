@@ -1,10 +1,10 @@
 -f https://download.pytorch.org/whl/torch_stable.html
+python -m spacy download en_core_web_sm
 pandas
 streamlit
 spacy
 torch==1.8.1+cpu
 torchvision==0.9.1+cpu
-python -m spacy download en_core_web_sm
 transformers
 sentencepiece
 googletrans==3.1.0a0
