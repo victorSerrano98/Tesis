@@ -4,7 +4,7 @@ streamlit
 spacy
 torch==1.8.1+cpu
 torchvision==0.9.1+cpu
-spacy download en_core_web_sm
+python -m spacy download en_core_web_sm
 transformers
 sentencepiece
 googletrans==3.1.0a0
