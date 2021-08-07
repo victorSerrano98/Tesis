@@ -1,9 +1,6 @@
 pandas
 streamlit
 spacy
-torch
-torchvision
-torchaudio
 transformers
 sentencepiece
 googletrans==3.1.0a0

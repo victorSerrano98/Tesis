@@ -29,14 +29,16 @@ if torch.cuda.is_available():
 else:
     print("Do Nothing. Run as CPU")
 
-
-questions = "¿Cuánto tiempo tardan en aparecer los síntomas del covid-19?"
-translator = Translator()
-texto = questions
-translation = translator.translate(texto, dest='en')
-print(translation.text)
-questions = translation.text
 question_answerer = pipeline("question-answering")
+# questions = "¿Cuánto tiempo tardan en aparecer los síntomas del covid-19?"
+def traductor(questions):
+    translator = Translator()
+    texto = questions
+    translation = translator.translate(texto, dest='en')
+    print(translation.text)
+    questions = translation.text
+    return questions
+
 
 
 nlp = spacy.load("en_core_web_sm")
