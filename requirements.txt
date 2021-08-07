@@ -1,7 +1,7 @@
 pandas
 streamlit
 spacy
-pytorch
+pytorch==1.6.0
 transformers
 sentencepiece
 googletrans==3.1.0a0
