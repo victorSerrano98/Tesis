@@ -1,2 +1,8 @@
 pandas
 streamlit
+spacy
+torch==1.5.0+cu92 torchvision==0.6.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
+transformers
+transformers sentencepiece
+googletrans==3.1.0a0
+pyvespa
