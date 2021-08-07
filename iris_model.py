@@ -15,7 +15,7 @@ def main():
     def parametros():
         pregunta=st.text_input('ingrese pregunta:')
         return pregunta
-
+    parametros()
 
     if st.button('Aceptar'):
         traducido = Tesis1.traductor(pregunta)
