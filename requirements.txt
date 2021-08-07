@@ -1,3 +1,4 @@
+phyton 3.7
 pandas
 streamlit
 spacy
