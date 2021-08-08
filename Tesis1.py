@@ -68,7 +68,7 @@ def respuesta(questions,result):
             if x > 0.90:
                 resp = result['answer']
                 titulo = res["fields"]["title-full"]
-                list = list + '\n \n' + resp + ''\n \n '+titulo
+                list = list + '\n \n' + resp + '\n \n '+titulo
         except:
             print("Error")
     return list
