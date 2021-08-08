@@ -11,11 +11,7 @@ def classify(num):
 def main():
     st.title('Chatbot:')
     st.sidebar.header('Universidad Nacional de Loja')
-    pregunta=""
-    def parametros():
-        pregunta=st.text_input('ingrese pregunta:')
-        return pregunta
-    p=parametros()
+    pregunta=st.text_input('ingrese pregunta:')
 
     if st.button('Aceptar'):
         traducido = Tesis1.traductor(pregunta)
