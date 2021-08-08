@@ -19,10 +19,10 @@ def main():
 
     if st.button('Aceptar'):
         traducido = Tesis1.traductor(pregunta)
-        query = Tesis1.spa(traducido)
-        articulos = Tesis1.vespa(query)
-        respuesta = Tesis1.respuesta(traducido, articulos)
-        st.success(respuesta)
+        #query = Tesis1.spa(traducido)
+        #articulos = Tesis1.vespa(query)
+        #respuesta = Tesis1.respuesta(traducido, articulos)
+        st.success(pregunta)
 if __name__ == '__main__':
     main()
  
