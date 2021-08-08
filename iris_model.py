@@ -19,8 +19,8 @@ def main():
 
     if st.button('Aceptar'):
         traducido = Tesis1.traductor(pregunta)
-        query = Tesis1.spacy(traducido)
-        articulos = Tesis1.vespa(query)
+        #query = Tesis1.spacy(traducido)
+        articulos = Tesis1.vespa("covid-19 sintomas")
         respuesta = Tesis1.respuesta(articulos)
         st.success(respuesta)
 if __name__ == '__main__':
