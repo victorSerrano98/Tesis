@@ -1,12 +1,13 @@
-import spacy
+
 from transformers import pipeline
+question_answerer = pipeline("question-answering")
 from googletrans import Translator
 from vespa.application import Vespa
 from vespa.query import Union, WeakAnd, ANN
 from random import random
 from vespa.query import QueryModel, RankProfile, QueryRankingFeature
+import spacy
 
-question_answerer = pipeline("question-answering")
 # questions = "¿Cuánto tiempo tardan en aparecer los síntomas del covid-19?"
 def traductor(questions):
     translator = Translator()
@@ -14,7 +15,7 @@ def traductor(questions):
     questions = translation.text
     return questions
 
-def spacy(questions):
+def spa(questions):
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(questions)
     query = ""
@@ -59,7 +60,7 @@ def vespa(query):
     return result
 
 def respuesta(questions,result):
-    list = []
+    list = ""
     for res in result:
         try:
             result = question_answerer(question=questions, context=res["fields"]["abstract-full"])
@@ -67,7 +68,7 @@ def respuesta(questions,result):
             if x > 0.90:
                 resp = result['answer']
                 titulo = res["fields"]["title-full"]
-                list.append(resp + "\n"+titulo)
+                list = list + '\n \n' + resp + ''\n \n '+titulo
         except:
             print("Error")
     return list
