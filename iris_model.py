@@ -21,7 +21,7 @@ def main():
         traducido = Tesis1.traductor(pregunta)
         #query = Tesis1.spacy(traducido)
         articulos = Tesis1.vespa("covid-19 sintomas")
-        respuesta = Tesis1.respuesta(articulos)
-        st.success(respuesta)
+       # respuesta = Tesis1.respuesta(articulos)
+        st.success(articulos)
 if __name__ == '__main__':
     main()
