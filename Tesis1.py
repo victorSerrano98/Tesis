@@ -72,3 +72,4 @@ def respuesta(questions,result):
         except:
             print("Error")
     return list
+ 
