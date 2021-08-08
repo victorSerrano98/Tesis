@@ -13,7 +13,7 @@ def main():
         query = Tesis1.spa(traducido)
         #articulos = Tesis1.vespa(query)
         #respuesta = Tesis1.respuesta(traducido, articulos)
-        st.success(traducido+ "   :   " query)
+        st.success(traducido+ "   :   " + query)
 if __name__ == '__main__':
     main()
  
