@@ -22,7 +22,7 @@ def spa(questions):
     for chunk in doc.noun_chunks:
         print(chunk.root.text, chunk.root.dep_,
               chunk.root.head.text)
-        if chunk.root.dep_=="pobj":
+        if chunk.root.dep_=="nsubj":
             query="covid-19 "+ chunk.root.text
     return query
 
