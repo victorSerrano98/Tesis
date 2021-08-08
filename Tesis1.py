@@ -55,8 +55,8 @@ def vespa(query):
         'ranking': 'bm25'
     }).hits
     # Eliminar repetidos mediante el abstract
-    result = {each["fields"]["abstract-full"]: each for each in query_result}.values()
-    return result
+    # result = {each["fields"]["abstract-full"]: each for each in query_result}.values()
+    return query_result
 
 def respuesta(questions,result):
     list = []
